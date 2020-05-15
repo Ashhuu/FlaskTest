@@ -1,0 +1,9 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+<h1> {{ title }}</h1>
+<p>{{ description }}</p>
+{% for i in data %}
+<p>Name: {{ i.name }}, Age: {{ i.age }}</p>
+{% endfor %}
+{% endblock %}
