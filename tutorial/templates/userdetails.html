@@ -1,0 +1,10 @@
+{% extends 'layout.html' %}
+
+{% block content %}
+
+{% for user in data %}
+<p>{{ user.id }}: Username: {{ user.username }}, Email: {{ user.email }}, Password: {{ user.password_hash }}</p>
+{% endfor %}
+
+{% endblock %}
+

@@ -3,15 +3,11 @@
 {% block content %}
 <h1> {{ title }}</h1>
 <p>{{ description }}</p>
-<form>
-    <label>Name: </label>
-    <input type="text">
-    <input type="Submit">
-</form>
+
 
 <form method="POST">
-    <p>{{ form.name.label }}{{ form.name }}</p>
-    {% for errors in form.name.errors %}<div id="error_name">
+    <p>{{ form.username.label }}{{ form.username }}</p>
+    {% for errors in form.username.errors %}<div id="error_name">
     {{ errors }}</div>{% endfor %}
     <p>{{ form.email.label }}{{ form.email }}</p>
      {% for errors in form.email.errors %}<div id="error_email">

@@ -1,8 +1,15 @@
 <header>
     <nav>
         <a href="/register">Register</a>
+        {% if isActive == 0 %}
         <a href="/login">Login</a>
+        {% endif %}
         <a href="/">Homepage</a>
-        <a href="www.google.com">Google</a>
+        <a href="/userdetails">User Details</a>
+        <a href="/dashboard">Dashboard</a>
+        <a href="https://www.google.com">Google</a>
+        {% if isActive == 1 %}
+        <a href="/logout">Log out</a>
+        {% endif %}
     </nav>
 </header>
